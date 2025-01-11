@@ -6,6 +6,7 @@ export const getNews = async ({
   page_number = 1,
   page_size = 10,
   category,
+  keywords,
 }) => {
   try {
     const response = await axios.get(`${NEWS_SERVICE}`, {
@@ -14,6 +15,7 @@ export const getNews = async ({
         page_number: page_number,
         page_size: page_size,
         category: category,
+        keywords: keywords,
       },
     });
 

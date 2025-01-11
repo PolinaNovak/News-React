@@ -1,0 +1,16 @@
+.searchBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 22px;
+}
+
+.keywords {
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid black;
+  color: black;
+  font-weight: bold;
+}
