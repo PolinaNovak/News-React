@@ -1,11 +1,8 @@
 import styles from "./styles.module.css";
-
-const Image = ({ image }) => {
+export default function Image({ image }) {
   return (
-    <div className={styles.wrapper}>
-      {image ? <img src={image} alt="news" className={styles.image} /> : null};
+    <div className={styles.imageBody}>
+      {image ? <img src={image} alt="News" className={styles.image} /> : null}
     </div>
   );
-};
-
-export default Image;
+}

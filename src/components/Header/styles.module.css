@@ -1,16 +1,17 @@
-.header {
+.headerBody {
   display: flex;
   flex-direction: column;
-  row-gap: 12px;
-  padding: 12px 24px;
   align-items: center;
-  border-bottom: 1px solid #f2f4f5;
+  justify-content: center;
+  background-color: pink;
+  padding-block: 25px;
+  gap: 15px;
 }
 
 .title {
-  font-size: 28px;
+  text-decoration: overline;
 }
 
-.date {
-  font-size: 16px;
+.time {
+  font-weight: bold;
 }

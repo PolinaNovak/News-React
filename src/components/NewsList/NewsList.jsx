@@ -1,14 +1,12 @@
 import styles from "./styles.module.css";
 import NewsItem from "../NewsItem/NewsItem";
 
-const NewsList = ({ news }) => {
+export default function NewsList({ news }) {
   return (
-    <ul className={styles.list}>
-      {news.map((item) => {
-        return <NewsItem key={item.id} item={item} />;
+    <div className={styles.newsListBody}>
+      {news.map((elem) => {
+        return <NewsItem key={elem.id} item={elem} />;
       })}
-    </ul>
+    </div>
   );
-};
-
-export default NewsList;
+}

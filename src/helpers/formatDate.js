@@ -1,4 +1,4 @@
-export const formatDate = (date) => {
+const formatDate = (date) => {
   const options = {
     weekday: "long",
     year: "numeric",
@@ -7,3 +7,5 @@ export const formatDate = (date) => {
   };
   return date.toLocaleDateString("en-US", options);
 };
+
+export default formatDate;

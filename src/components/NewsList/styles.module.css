@@ -1,6 +1,6 @@
-.list {
-  width: 100%;
+.newsListBody {
+  font-size: 12px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 12px;
 }

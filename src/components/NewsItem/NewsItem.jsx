@@ -1,22 +1,19 @@
-import { formatTimeAgo } from "../../helpers/formatTimeAgo";
 import styles from "./styles.module.css";
-import Image from "../Image/Image";
+import { formatTimeAgo } from "../../helpers/formatTimeAgo.js";
 
-const NewsItem = ({ item }) => {
+export default function NewsItem({ item }) {
   return (
-    <li className={styles.item}>
+    <li className={styles.newsItemBody}>
       <div
-        className={styles.wrapper}
+        className={styles.itemImage}
         style={{ backgroundImage: `url(${item.image})` }}
       ></div>
       <div className={styles.info}>
-        <h3 className={styles.title}>{item.title}</h3>
-        <p className={styles.extra}>
-          {formatTimeAgo(item.published)} by {item.author}
+        <h3 className={styles.itemTitle}>{item?.title}</h3>
+        <p className={styles.itemAuthor}>
+          {formatTimeAgo(item?.published)} by {item?.author}
         </p>
       </div>
     </li>
   );
-};
-
-export default NewsItem;
+}
