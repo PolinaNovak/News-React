@@ -1,0 +1,28 @@
+.banner {
+  width: 100%;
+  /* height: auto; */
+  padding-top: 120%;
+  margin-bottom: 22px;
+}
+
+.item {
+  width: 100%;
+  height: 83px;
+  margin-block: 12px;
+}
+
+.banner,
+.item {
+  background: linear-gradient(-90deg, white 0%, gray 50%, white 100%);
+  background-size: 400% 400%;
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: -135% 0%;
+  }
+}
