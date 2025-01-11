@@ -1,0 +1,26 @@
+.categoriesBody {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  gap: 12px;
+  scrollbar-width: none;
+  overflow-x: auto;
+}
+
+.category,
+.activeCategory {
+  border: 1px solid white;
+  width: 100%;
+  height: 30px;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.activeCategory {
+  font-weight: bold;
+}
