@@ -1,0 +1,13 @@
+.newsFiltersBody {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  /* max-width: 50%; */
+  max-width: 65vw;
+}
+
+@media (max-width: 768px) {
+  .newsFiltersBody {
+    max-width: 90vw;
+  }
+}

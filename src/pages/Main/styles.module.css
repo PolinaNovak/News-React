@@ -1,0 +1,14 @@
+.mainBody {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  /* align-items: center;
+  justify-content: center; */
+  gap: 32px;
+}
+
+@media (max-width: 768px) {
+  .mainBody {
+    grid-template-columns: 1fr;
+  }
+}

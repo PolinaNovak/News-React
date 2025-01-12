@@ -1,10 +1,7 @@
 import styles from "./styles.module.css";
+import { withSkeletonCategories } from "../../helpers/hocs/withSkeletonCategories";
 
-export default function Categories({
-  categories,
-  setSelectedCategory,
-  selectedCategory,
-}) {
+function Categories({ categories, setSelectedCategory, selectedCategory }) {
   return (
     <div className={styles.categoriesBody}>
       <button
@@ -31,3 +28,7 @@ export default function Categories({
     </div>
   );
 }
+
+const CategoriesWithSkeletonCategories = withSkeletonCategories(Categories);
+
+export default CategoriesWithSkeletonCategories;
