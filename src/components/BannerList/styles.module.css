@@ -3,4 +3,13 @@
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   width: 100%;
   box-sizing: border-box;
+  max-height: 1200px;
+  overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+  .bannersListBody {
+    max-height: 1200px;
+    overflow-y: auto;
+  }
 }

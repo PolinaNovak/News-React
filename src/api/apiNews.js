@@ -1,5 +1,9 @@
 const API_KEY = import.meta.env.VITE_NEWS_API_KEY;
-import { NEWS_SERVICE, NEWS_CATEGORY } from "../constants/api";
+import {
+  NEWS_SERVICE,
+  NEWS_CATEGORY,
+  NEWS_LATEST_SERVICE,
+} from "../constants/api";
 import axios from "axios";
 
 export const getNews = async ({
@@ -28,6 +32,20 @@ export const getNews = async ({
 export const getCategories = async () => {
   try {
     const response = await axios.get(`${NEWS_CATEGORY}`, {
+      params: {
+        apiKey: API_KEY,
+      },
+    });
+
+    return response.data;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const getLatestNews = async () => {
+  try {
+    const response = await axios.get(`${NEWS_LATEST_SERVICE}`, {
       params: {
         apiKey: API_KEY,
       },
