@@ -3,3 +3,23 @@
   width: 100%;
   padding: 24px;
 }
+
+.dark .mainContainer {
+  background-color: black;
+}
+
+.light .mainContainer {
+  background-color: white;
+}
+
+.dark p,
+.dark h3,
+.dark h1 {
+  color: lightblue;
+}
+
+.light p,
+.light h3,
+.light h1 {
+  color: pink;
+}
